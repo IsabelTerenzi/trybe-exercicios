@@ -123,3 +123,42 @@ else {
 }
 
 //exercicio 9
+const p = 25;
+const q = 30;
+const v = 70;
+
+if (p % 2 !== 0 || q % 2 !== 0 || v % 2 !==0) {
+    console.log("true");
+}
+else {
+    console.log("false");
+}
+
+//exercicio 10
+const custo = 10 + 20/100*10;
+const valorVenda = 20;
+const lucro = valorVenda - custo;
+
+console.log(lucro*1000);
+
+//exercicio 11
+const salarioBruto = 3000;
+const aliquota = salarioBruto
+
+if (salarioBruto <= 1556.94) {
+    console.log(salarioBruto - 8/100*salarioBruto);
+}
+else if (salarioBruto >= 1556.95 && salarioBruto <= 2594.92) {
+    console.log(salarioBruto - 9/100*salarioBruto);
+}
+else if (salarioBruto >= 2594.93 && salarioBruto <= 5189.82) {
+    console.log(salarioBruto - 11/100*salarioBruto);
+}
+else {
+    console.log(salarioBruto + 570.88);
+}
+
+
+
+
+
