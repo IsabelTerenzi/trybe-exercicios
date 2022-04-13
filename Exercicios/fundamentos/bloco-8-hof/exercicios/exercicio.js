@@ -163,4 +163,52 @@ const studentAverage = students.map((student, index) => ({
   name: student,
   average: grades[index].reduce((acc, nota) => acc + nota) / grades[index].length,
 }));
-console.log(studentAverage);
+
+// Faça uma lista com as suas frutas favoritas
+const specialFruit = ['Banana', 'Maçã', 'Laranja'];
+
+// Faça uma lista de complementos que você gostaria de adicionar
+const additionalItens = ['Leite condensado', 'Leite ninho', 'Granola'];
+
+const fruitSalad = (fruit, additional) => [...fruit, ...additional];
+
+
+const user = {
+  name: 'Maria',
+  age: 21,
+  nationality: 'Brazilian',
+};
+
+const jobInfos = {
+  profession: 'Software engineer',
+  squad: 'Rocket Landing Logic',
+  squadInitials: 'RLL',
+};
+
+const userJob = {
+  ...user,
+  ...jobInfos
+};
+//console.log(userJob);
+const printUserJob = ({ name, age, nationality, profession, squad, squadInitials }) => {
+  console.log(`Hi, my name is ${name}, I'm ${age} years old and I'm ${nationality}. I work as a ${profession} amd my squad is ${squadInitials} ${squad}`)
+};
+//printUserJob(userJob);
+
+const person = {
+  name: 'João',
+  lastName: 'Jr',
+  age: 34,
+};
+
+const { nationality = 'Brazilian'} = person;
+
+const getPosition = (latitude, longitude) => ({
+  latitude,
+  longitude});
+
+  const multiply = (number, value = 1) => {
+    return number * value;
+  };
+  
+  console.log(multiply(8));
